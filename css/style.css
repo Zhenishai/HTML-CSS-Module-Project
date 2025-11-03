@@ -74,7 +74,6 @@ align-items: center;
 justify-content: center;
 text-align: center;
 }
-
 .imageBckg h1,
 .imageBckg h2 {
 color: #fff;
@@ -86,8 +85,6 @@ text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 background-color: #fff;
 padding: 6rem 1.5rem;
 }
-
-/* Features grid */
 .features {
   padding: 6rem;
 display: grid;

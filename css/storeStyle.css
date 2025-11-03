@@ -1,0 +1,224 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Layout Containers ---------- */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  font-weight: 400;
+}
+
+.nav-current {
+  color: #f15a29;
+}
+
+.nav-link:hover {
+  color: #f15a29;
+  transition: color 0.3s ease;
+}
+
+/* ---------- Main Layout ---------- */
+.main {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  box-sizing: border-box;
+}
+
+.left {
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 3rem;
+}
+
+.right {
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.right img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Heading ---------- */
+.left h1 {
+  padding: 0 0 2rem 0;
+  font-size: 1.9rem;
+  color: #f15a29;
+}
+
+/* ---------- Order Form ---------- */
+.order-form {
+  width: 100%;
+  max-width: 620px;
+}
+
+.order-form .row {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Name Row ---- */
+.name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ---- Address Rows ---- */
+.field.full {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ---- City + Postcode ---- */
+.city-post {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ---- Inputs & Labels ---- */
+.order-form label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #777171;
+}
+
+.order-form input[type="text"],
+.order-form select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* ---- Radio Buttons ---- */
+.radios .group-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.radio-row {
+  margin: 2rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+/* ---- Checkbox ---- */
+.checkbox-label {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+/* ---- Accent Colors ---- */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #f15a29;
+  cursor: pointer;
+}
+
+/* ---- Submit Button ---- */
+.order-form .submit-btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #f15a29;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.order-form .submit-btn:hover {
+  background: #d44f25;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #f9f9f9;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.social img:hover {
+  opacity: 1;
+}
