@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/storeStyle.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+
+    <header class="header cont">
+        <logo class="logo">
+            <img src="img/karma-logo.svg" />
+        </logo>
+        <nav>            
+            <ul class="navigation bar">
+                <li class="nav-link">
+                    <a class="nav-link" href="index.html">Meet Karma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">How it Works</a>
+                </li>
+                <li class="nav-item nav-current bold">
+                    <a class="nav-link" href="">Store</a>
+                </li>
+                <li class="nav- item">
+                    <a class="nav-link" href="">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="main container">
+  <div class="left">
+    <h1>Order your Karma wifi device today!</h1>
+<form class="order-form" novalidate>
+
+  <div class="name-row">
+    <div class="field">
+      <label for="firstName">First Name *</label>
+      <input id="firstName" name="firstName" type="text" required>
+    </div>
+    <div class="field">
+      <label for="lastName">Last Name *</label>
+      <input id="lastName" name="lastName" type="text" required>
+    </div>
+  </div>
+
+  <div class="field full">
+    <label for="address1">Address *</label>
+    <input id="address1" name="address1" type="text">
+  </div>
+
+  <div class="field full">
+    <label for="address2">Address 2</label>
+    <input id="address2" name="address2" type="text">
+  </div>
+
+  <div class="city-post">
+    <div class="field">
+      <label for="city">City *</label>
+      <select id="city" name="city">
+        <option value="Select your city...">Select your city...</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="madrid">Madrid</option>
+        <option value="paris">Paris</option>
+        <option value="bishkek">Bishkek</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="postcode">Postcode *</label>
+      <input id="postcode" name="postcode" type="text">
+    </div>
+  </div>
+
+  <div class="radios">
+    <label class="group-label">Select a colour</label>
+    <div class="radio-row">
+      <label><input type="radio" name="color" value="orange" checked> Karma Orange</label>
+      <label><input type="radio" name="color" value="grey"> Space Grey</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <label class="checkbox-label">
+      <input type="checkbox" name="terms" required>
+      By placing your order you agree to Karma's<em style="color: rgb(242, 114, 68);"><u>Terms & Conditions.</u></em>*
+    </label>
+  </div>
+
+  <button type="submit" class="submit-btn">Place my order!</button>
+</form>
+
+  </div>
+
+  <div class="right">
+    <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Karma device">
+  </div>
+</main>
+
+    <footer class="footer cont">
+        <p class="bold">Join us on</p>
+        <socials class="social flex-row">
+            <img src="img/twitter-icon.svg" />
+            <img src="img/facebook-icon.svg" />
+            <img src="img/instagram-icon.svg" />
+        </socials>
+        <p>&copy; Karma Mobility Inc</p>
+    </footer>
+
+</body>
+</html>
